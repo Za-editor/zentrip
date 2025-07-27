@@ -317,7 +317,7 @@ function renderDestinations(data) {
           alt=""
         />
       </div>
-    </div>div`;
+    </div>`;
         div.innerHTML = choiceContent;
         bookingDiv.appendChild(div);
 

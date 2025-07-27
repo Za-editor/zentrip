@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-Outfit" id="aboutUs">
+    <div
+      class="bg-[url(./Assets/Home-page/background5.jpg)] bg-cover bg-repeat bg-center min-h-[40vh]"
+      id="hero"
+    >
+      <div class="fixed top-0 left-0 right-0 z-40">
+        <div
+          class="flex items-center justify-between md:px-10 md:pt-5 px-3 pt-3 transition-colors duration-700 ease-in"
+          id="nav"
+        >
+          <a href="index.html">
+            <img
+              src="Assets/Shared/zentrip-high-resolution-logo-transparent.png"
+              alt="logo-img"
+              class="w-25 h-10 md:w-30 md:h-10 lg:w-50 lg:h-15"
+              id="logo"
+            />
+          </a>
+
+          <div class="block lg:hidden" onclick="showSideBar()">
+            <i class="fa-solid fa-bars fa-xl" style="color: #4741a6"></i>
+          </div>
+
+          <nav
+            class="lg:flex md:gap-10 lg:gap-30 items-center hidden py-5"
+            id="navcnt"
+          >
+            <ul class="flex space-x-4 text-white gap-10">
+              <li
+                class="hover:text-[#F9CE69] text-xl font-medium tracking-wide"
+              >
+                <a href="index.html">Home</a>
+              </li>
+              <li
+                class="hover:text-[#F9CE69] text-xl font-medium tracking-wide"
+              >
+                <a href="Destinations.html">Destinations</a>
+              </li>
+              <li
+                class="hover:text-[#F9CE69] text-xl font-medium tracking-wide"
+              >
+                <a href="travelplanner.html">Travel Planner</a>
+              </li>
+              <li
+                class="hover:text-[#F9CE69] text-xl font-medium tracking-wide"
+              >
+                <a href="bookings.html">Booking</a>
+              </li>
+              <li
+                class="hover:text-[#F9CE69] text-xl font-medium tracking-wide"
+              >
+                <a href="aboutUs.html">About Us</a>
+              </li>
+            </ul>
+            <button
+              id="signup"
+              class="bg-[#4741A6] rounded-full px-4 py-2 text-white hover:bg-[#F9CE69] hover:text-black cursor-pointer"
+            >
+              Sign up / Login
+            </button>
+          </nav>
+
+          <nav
+            class="gap-20 fixed top-0 right-0 h-screen w-64 bg-[#4741a6]/90 z-[9999] shadow-lg pt-5 px-5 hidden transform transition-transform duration-300 ease-in-out backdrop-blur-md"
+            id="sidebar"
+          >
+            <ul class="flex space-x-4 text-white gap-6 flex-col">
+              <li onclick="hideSideBar()">
+                <i class="fa-solid fa-xmark fa-xl"></i>
+              </li>
+              <li class="hover:text-[#F9CE69]">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="hover:text-[#F9CE69]">
+                <a href="Destinations.html">Destination</a>
+              </li>
+              <li class="hover:text-[#F9CE69]">
+                <a href="travelplanner.html">Travel Planner</a>
+              </li>
+              <li class="hover:text-[#F9CE69]">
+                <a href="bookings.html">Booking</a>
+              </li>
+              <li class="hover:text-[#F9CE69]">
+                <a href="aboutUs.html">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--   Providing page    -->
+    <div
+      class="md:grid md:grid-cols-2 px-2 md:pt-10 lg:px-10 py-2 md:py-5 lg:py-10 z-[-1] lg:h-[100vh] md:h-[55vh] h-[100vh] flex flex-col"
+    >
+      <div class="flex flex-col gap-5 md:pr-20 md:pt-10 lg:pr-20">
+        <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-[#4741A6]">
+          Providing full range <br /><span class="mt-2 text-black"
+            >of transportation</span
+          >
+        </h1>
+        <p class="text-sm md:text-base lg:text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, est
+          exercitationem numquam doloremque atque voluptatibus eligendi illo
+          tenetur rem autem laboriosam recusandae distinctio praesentium
+          similique. Iure incidunt excepturi autem eos.
+        </p>
+        <div class="flex gap-10">
+          <button
+            class="bg-[#4741A6] rounded-lg px-2 text-white text-sm md:text-base hover:bg-[#F9CE69] hover:text-black cursor-pointer"
+          >
+            Discover More
+          </button>
+
+          <button
+            class="bg-gray-400 rounded-lg px-4 text-white text-sm md:text-base hover:bg-grey-600 hover:text-black cursor-pointer"
+          >
+            <p>Call to action <br />+234 812 919 0795</p>
+          </button>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div
+          class="drop-shadow-xl/25 bg-white text-black md:p-5 p-3 rounded-lg flex flex-col gap-3 text-center absolute top-80 left-30 -z-1"
+        >
+          <h1 class="text-[#4741A6] text-xl md:text-2xl lg:text-3xl">20 +</h1>
+          <p>Years of experience</p>
+        </div>
+
+        <div class="w-80 h-70 lg:w-1/2 lg:h-50 rounded-lg absolute top-10 -z-2">
+          <img class="rounded-lg" src="Assets/AboutUs/travellers1.jpg" alt="" />
+        </div>
+        <div
+          class="w-50 h-40 lg:w-1/2 lg:h-50 rounded-lg absolute lg:left-60 lg:top-60 md:left-50 md:top-60 left-50 top-60 -z-2"
+        >
+          <img class="rounded" src="Assets/AboutUs/travellers 2.jpg" alt="" />
+        </div>
+        <div
+          class="w-50 h-70 absolute lg:left-60 lg:top-30 md:left-50 md:top-30 left-50 top-30 -z-5"
+        >
+          <img
+            src="Assets/Home-page/about us/dots-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="px-2 md:px-5 lg:px-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-10 py-2 md:py-5 lg:py-10"
+    >
+      <div class="px-2 md:px-3 lg:px-4">
+        <i
+          class="fa-solid fa-plane-circle-check fa-rotate-90 fa-lg mb-5"
+          style="color: #4741a6"
+        ></i>
+        <h2 class="text-lg font-bold text-[#4741A6]">
+          Experience and Expertise
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          molestias.
+        </p>
+      </div>
+
+      <div class="px-2 md:px-3 lg:px-4 lg:border-l lg:border-[#4741A6]">
+        <i class="fa-solid fa-timeline fa-lg mb-5" style="color: #4741a6"></i>
+        <h2 class="text-lg font-bold text-[#4741A6]">
+          Reliability and Timeless
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          molestias.
+        </p>
+      </div>
+
+      <div class="px-2 md:px-3 lg:px-4 lg:border-l lg:border-[#4741A6]">
+        <i
+          class="fa-solid fa-laptop-file fa-lg mb-5"
+          style="color: #4741a6"
+        ></i>
+        <h2 class="text-lg font-bold text-[#4741A6]">Comprehensive Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          molestias.
+        </p>
+      </div>
+    </div>
+
+    <!----     Industry   ----->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 p-2 md:p-5 lg:p-10 xl:p-15 gap-2 md:gap-5 lg:gap-10 bg-gray-200"
+    >
+      <div class="flex justify-center content-center h-full">
+        <div class="w-sm md:w-md lg:w-3xl xl:w-xl">
+          <img
+            class="rounded-lg object-cover"
+            src="Assets/AboutUs/industry.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="">
+        <h2
+          class="text-2xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-4 lg:mb-5"
+        >
+          Our Industry - explicit <br /><span class="text-[#4741A6]"
+            >Competence</span
+          >
+        </h2>
+        <p class="mb-3 md:mb-4 lg:mb-5">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+          ducimus laborum, alias laboriosam in blanditiis vero quae nulla
+          aliquam eius.
+        </p>
+        <div
+          class="grid grid-cols-2 gap-2 md:gap-3 lg:gap-5 mb-3 md:mb-4 lg:mb-5"
+        >
+          <p>
+            <i class="fa-solid fa-sheet-plastic" style="color: #4741a6"></i>
+            Expert Planning
+          </p>
+          <p>
+            <i class="fa-solid fa-book-bookmark" style="color: #4741a6"></i>
+            Seamless Booking
+          </p>
+          <p>
+            <i class="fa-solid fa-map-location-dot" style="color: #4741a6"></i>
+            Local Insights
+          </p>
+          <p>
+            <i class="fa-solid fa-phone-volume" style="color: #4741a6"></i> 24/7
+            Support
+          </p>
+          <p>
+            <i class="fa-solid fa-clipboard-list" style="color: #4741a6"></i>
+            Custom Itineraries
+          </p>
+          <p>
+            <i class="fa-solid fa-handshake" style="color: #4741a6"></i> Trusted
+            Partners
+          </p>
+        </div>
+
+        <button
+          class="bg-[#4741A6] rounded-lg px-2 py-2 md:py-3 lg:py-4 text-white text-sm md:text-base hover:bg-[#F9CE69] hover:text-black cursor-pointer"
+        >
+          Get Help Now!
+        </button>
+      </div>
+    </div>
+
+    <!--------------Destinations----------->
+    <div class="flex justify-center">
+      <div class="w:full lg:min-w-[60vw] px-2 md:px-3 lg:px-5">
+        <div class="text-center" id="destination writup">
+          <h1
+            class="text-xl md:text-2xl lg:text-4xl font-bold my-4 text-[#4741A6]"
+          >
+            Your Expert Team
+          </h1>
+          <p class="text-sm md:text-base lg:text-lg font-bold mb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ab.
+          </p>
+        </div>
+
+        <div
+          class="grid gap-3 md:gap-4 lg:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-4 px-10 md:px-5 lg:px-2"
+          id=""
+        >
+          <div
+            class="border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-70 md:h-50 w-full object-cover hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
+                src="Assets/AboutUs/amira.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-2">
+              <p class="text-sm md:textlg font-bold text-[#4741A6]">
+                Travel Consultant
+              </p>
+              <p class="text-md md:text-lg font-bold">Amira Bennett</p>
+            </div>
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-70 md:h-50 w-full object-cover hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
+                src="Assets/AboutUs/okoro.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-2">
+              <p class="text-sm md:textlg font-bold text-[#4741A6]">
+                Customer Support
+              </p>
+              <p class="text-md md:text-lg font-bold">Liam Okoro</p>
+            </div>
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-70 md:h-50 w-full object-cover hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
+                src="Assets/AboutUs/sofia.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-2">
+              <p class="text-sm md:textlg font-bold text-[#4741A6]">
+                Marketing Manager
+              </p>
+              <p class="text-md md:text-lg font-bold">Sofia Tanaka</p>
+            </div>
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg h-70 md:h-50 w-full object-cover hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
+                src="Assets/AboutUs/jaden.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-2">
+              <p class="text-sm md:textlg font-bold text-[#4741A6]">
+                Operations Coordinator
+              </p>
+              <p class="text-md md:text-lg font-bold">Jaden Cruz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----footer------>
+    <div
+      class="bg-[#2C3E50] flex flex-col md:flex-row md:justify-between p-2 p-10 lg:p-20 text-white"
+    >
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-30 lg:gap-30">
+        <div>
+          <ul class="flex flex-col gap-3">
+            <li class="font-bold">Information</li>
+            <li>Our Company</li>
+            <li>Docs</li>
+            <li>Pricing</li>
+            <li>Contact Us</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-col gap-3">
+            <li class="font-bold">Application</li>
+            <li>Download</li>
+            <li>Bookings</li>
+            <li>How to book</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-col gap-3">
+            <li class="font-bold">Api</li>
+            <li>Documentation</li>
+            <li>Credentials</li>
+            <li>Developer info</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 pt-5 md:pt-0">
+        <img
+          class="w-30 h-10"
+          src="Assets/Shared/zentrip-high-resolution-logo-transparent.png"
+          alt=""
+        />
+        <p>All right reserved 2025Ⓡ - zentrip.io</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.
+          Voluptatibus, quisquam!
+        </p>
+        <div class="flex gap-5">
+          <i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff"></i>
+          <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+          <i class="fa-brands fa-facebook-f fa-lg" style="color: #ffffff"></i>
+          <i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffffff"></i>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
